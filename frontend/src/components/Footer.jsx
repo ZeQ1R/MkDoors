@@ -79,9 +79,14 @@ const Footer = () => {
                 'Maintenance & Inspection',
               ].map((service) => (
                 <li key={service}>
-                  <span className="text-slate-400 hover:text-white transition-colors cursor-pointer">
+                  <button
+                    onClick={() => {
+                      document.querySelector('#services')?.scrollIntoView({ behavior: 'smooth' });
+                    }}
+                    className="text-slate-400 hover:text-white transition-colors text-left"
+                  >
                     {service}
-                  </span>
+                  </button>
                 </li>
               ))}
             </ul>
