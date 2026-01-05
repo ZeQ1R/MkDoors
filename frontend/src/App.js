@@ -9,6 +9,7 @@ import Gallery from "./components/Gallery";
 import CallToAction from "./components/CallToAction";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import FloatingButtons from "./components/FloatingButtons";
 
 function App() {
   useEffect(() => {
@@ -33,6 +34,7 @@ function App() {
         <Contact />
       </main>
       <Footer />
+      <FloatingButtons />
     </div>
   );
 }
