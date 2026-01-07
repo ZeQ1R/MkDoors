@@ -38,7 +38,7 @@ const Navbar = () => {
             <div className={`font-bold text-xl sm:text-2xl tracking-tight ${
               isScrolled ? 'text-slate-800' : 'text-white'
             }`}>
-              <span className="text-blue-600">Elite</span> Garage Doors
+              <span className="text-blue-600">MK</span> Doors
             </div>
           </div>
 

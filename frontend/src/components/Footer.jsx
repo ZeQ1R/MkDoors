@@ -26,7 +26,7 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="lg:col-span-1">
             <div className="font-bold text-2xl mb-4">
-              <span className="text-blue-400">Elite</span> Garage Doors
+              <span className="text-blue-400">MK</span>Doors
             </div>
             <p className="text-slate-400 leading-relaxed mb-6">
               Your trusted local experts for professional garage door installation,
