@@ -209,17 +209,21 @@ const Contact = () => {
                   label: 'Phone',
                   value: contactInfo.phone,
                   href: `tel:${contactInfo.phone}`,
+                  target: '_blank',
                 },
                 {
                   icon: Mail,
                   label: 'Email',
                   value: contactInfo.email,
                   href: `mailto:${contactInfo.email}`,
+                  target: '_blank',
                 },
                 {
                   icon: MapPin,
                   label: 'Service Area',
                   value: contactInfo.serviceArea,
+                  href: "https://maps.app.goo.gl/XHx9rm8LxhK1dRR29",
+                  target: '_blank',
                 },
                 {
                   icon: Clock,
@@ -253,15 +257,23 @@ const Contact = () => {
 
             {/* Map Placeholder */}
             <div className="rounded-2xl overflow-hidden shadow-lg h-64 bg-slate-200">
-              <iframe
+              {/* <iframe
                 title="Service Area Map"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387193.30596698663!2d-74.25986548248684!3d40.69714941932609!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY%2C%20USA!5e0!3m2!1sen!2s!4v1620813675917!5m2!1sen!2s"
+                src="https://maps.app.goo.gl/YFhzYMDD9efSbXKB9"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
                 allowFullScreen=""
                 loading="lazy"
-              />
+              /> */}
+              <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2965.584436107102!2d21.074375076920937!3d41.98773125854174!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1353f7bc87a1f645%3A0x74a9e2a90d89e812!2sMakdoors!5e0!3m2!1sen!2smk!4v1768058594046!5m2!1sen!2smk" 
+              width="100%" 
+              height="100%" 
+              style={{border:0}} 
+              allowFullScreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade" />
             </div>
           </div>
         </div>

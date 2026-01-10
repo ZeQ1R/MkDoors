@@ -1,6 +1,7 @@
 import React from 'react';
 import { navLinks, contactInfo, socialLinks } from '../data/mock';
 import { Facebook, Instagram, Twitter, Phone, Mail, MapPin } from 'lucide-react';
+import logo from '../images/makdoors-removebg-preview.png';
 
 const iconMap = {
   Facebook: Facebook,
@@ -26,7 +27,8 @@ const Footer = () => {
           {/* Brand Column */}
           <div className="lg:col-span-1">
             <div className="font-bold text-2xl mb-4">
-              <span className="text-blue-400">MK</span>Doors
+              <img src={logo} alt="MK Doors Logo" className="w-[100px] h-[100px]" />
+              {/* <span className="text-blue-400">MK</span>Doors */}
             </div>
             <p className="text-slate-400 leading-relaxed mb-6">
               Your trusted local experts for professional garage door installation,
@@ -39,8 +41,9 @@ const Footer = () => {
                 return (
                   <a
                     key={social.name}
-                    href="#"
+                    href={social.href || '#'}
                     className="w-10 h-10 bg-slate-800 hover:bg-blue-600 rounded-lg flex items-center justify-center transition-colors duration-200"
+                    target="_blank"
                     aria-label={social.name}
                   >
                     {IconComponent && <IconComponent size={18} />}
@@ -100,6 +103,7 @@ const Footer = () => {
                 <a
                   href={`tel:${contactInfo.phone}`}
                   className="flex items-center gap-3 text-slate-400 hover:text-white transition-colors"
+                  target='_blank'
                 >
                   <Phone size={18} className="text-blue-400" />
                   {contactInfo.phone}
@@ -109,15 +113,23 @@ const Footer = () => {
                 <a
                   href={`mailto:${contactInfo.email}`}
                   className="flex items-center gap-3 text-slate-400 hover:text-white transition-colors"
+                  target='_blank'
                 >
                   <Mail size={18} className="text-blue-400" />
                   {contactInfo.email}
                 </a>
               </li>
-              <li className="flex items-start gap-3 text-slate-400">
+              <li>
+                <a 
+                href="https://maps.app.goo.gl/XHx9rm8LxhK1dRR29" 
+                className="flex items-start gap-3 text-slate-400"
+                target='_blank'
+                >
                 <MapPin size={18} className="text-blue-400 flex-shrink-0 mt-1" />
                 <span>{contactInfo.serviceArea}</span>
+                </a>
               </li>
+              
             </ul>
           </div>
         </div>
@@ -132,11 +144,9 @@ const Footer = () => {
             </p>
             <div className="flex gap-6 text-sm">
               <a href="#" className="text-slate-500 hover:text-white transition-colors">
-                Privacy Policy
+                Produced by Zeqir Xheladini
               </a>
-              <a href="#" className="text-slate-500 hover:text-white transition-colors">
-                Terms of Service
-              </a>
+
             </div>
           </div>
         </div>

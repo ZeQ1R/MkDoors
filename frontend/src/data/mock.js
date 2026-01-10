@@ -1,5 +1,7 @@
 // Mock data for Elite Garage Doors website
 
+import { href } from "react-router-dom";
+
 export const services = [
   {
     id: 1,
@@ -84,9 +86,9 @@ export const galleryImages = [
 ];
 
 export const contactInfo = {
-  phone: "(555) 123-4567",
-  email: "info@elitegaragedoors.com",
-  serviceArea: "Greater Metro Area & Surrounding Counties",
+  phone: "070 771 752",
+  email: "makdoors20@gmail.com",
+  serviceArea: "Zhelino, Tetovo",
   hours: "Mon-Sat: 7AM - 8PM, Sun: 9AM - 5PM"
 };
 
@@ -99,7 +101,7 @@ export const navLinks = [
 ];
 
 export const socialLinks = [
-  { name: "Facebook", icon: "Facebook" },
-  { name: "Instagram", icon: "Instagram" },
-  { name: "Twitter", icon: "Twitter" }
+  { name: "Facebook", icon: "Facebook",href:"https://www.facebook.com/people/Makdoors/100063452684668/" },
+  // { name: "Instagram", icon: "Instagram" },
+  // { name: "Twitter", icon: "Twitter" }
 ];

@@ -28,7 +28,7 @@ const Navbar = () => {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled
-          ? 'bg-white shadow-lg py-3'
+          ? 'bg-slate-800 shadow-lg py-3'
           : 'bg-transparent py-5'
       }`}
     >
@@ -52,7 +52,7 @@ const Navbar = () => {
                 key={link.name}
                 onClick={() => scrollToSection(link.href)}
                 className={`font-medium transition-colors duration-200 hover:text-blue-600 ${
-                  isScrolled ? 'text-slate-700' : 'text-white/90 hover:text-white'
+                  isScrolled ? 'text-slate-400' : 'text-white/90 hover:text-white'
                 }`}
               >
                 {link.name}
@@ -65,7 +65,7 @@ const Navbar = () => {
             <a
               href={`tel:${contactInfo.phone}`}
               className={`flex items-center gap-2 font-medium ${
-                isScrolled ? 'text-slate-700' : 'text-white'
+                isScrolled ? 'text-slate-400' : 'text-white'
               }`}
             >
               <Phone size={18} />
