@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Button } from './ui/button';
 import { navLinks, contactInfo } from '../data/mock';
 import { Menu, X, Phone } from 'lucide-react';
+import logo from '../images/makdoors-removebg-preview.png';
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -34,11 +35,13 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Logo */}
+          
           <div className="flex items-center gap-2">
             <div className={`font-bold text-xl sm:text-2xl tracking-tight ${
               isScrolled ? 'text-slate-800' : 'text-white'
             }`}>
-              <span className="text-blue-600">MK</span> Doors
+              {/* <span className="text-blue-600">MK</span> Doors */}
+              <img src={logo} alt="MK Doors Logo" className='w-[140px] h-[140px] '/>
             </div>
           </div>
 
